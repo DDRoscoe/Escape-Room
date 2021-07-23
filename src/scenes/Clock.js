@@ -13,6 +13,7 @@ class Clock extends Phaser.Scene {
     create (data) {
         this.x = data.x
         keyC = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.C);
+        this.add.text(centerX, game.config.height - 20, 'Press C to stop looking at the clock').setOrigin(0.5);
 
         if (this.x==1) {    // locked, lights on
             this.add.image(0, 0, 'clockdoor').setOrigin(0);
