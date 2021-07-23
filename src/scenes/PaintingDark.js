@@ -21,8 +21,9 @@ class PaintingDark extends Phaser.Scene {
         
         this.spooky = this.sound.add('spooky');
         this.spookyEnd = this.sound.add('spookyEnd', { loop: true});
-        this.spooky.play({ volume: 0.1});
-        
+        this.spooky.play({ volume: 0.2});
+ 
+
         this.timer = 0;
     }
 

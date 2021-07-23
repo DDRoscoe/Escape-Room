@@ -20,7 +20,8 @@ class Play extends Phaser.Scene {
         this.load.image('door', './assets/door.png');
         this.load.image('shelves', './assets/bookshelves2.png');
         this.load.image('paper', './assets/paper.png');
-        this.load.spritesheet('player', './assets/playerSpriteSheet.png', {
+        this.load.spritesheet('player', './assets/PlayerSpritesheet.png', {
+
             frameWidth: 15,
             frameHeight: 34,
         });
@@ -133,9 +134,9 @@ class Play extends Phaser.Scene {
         this.stepping = false;
         // add and play clock and room loops
         this.clockLoop = this.sound.add('clockLoop', { loop: true});
-        this.clockLoop.play({ rate: 1.5, volume: 0.7})
+        this.clockLoop.play({ rate: 1.5, volume: 0.5})
         this.roomTone = this.sound.add('roomTone', { loop: true});
-        this.roomTone.play({ volume: 0.1})
+        this.roomTone.play({ volume: 0.2})
         
         // define keys
         keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);

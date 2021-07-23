@@ -3,7 +3,7 @@ class Menu extends Phaser.Scene {
       super("menuScene");
     }
     preload() {
-      this.load.image('screen', './assets/TheFaceintheDark.png');
+      this.load.image('screen', './assets/TheFaceinTheDark2.png');
     }
   create() {
     let menuConfig = {
